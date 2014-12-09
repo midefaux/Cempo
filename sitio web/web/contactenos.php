@@ -27,7 +27,14 @@
         ================================================== -->
         <header>
           <div class="container">
-            <a href="index.html"><img src="img/logo.jpg" alt="Cempo"></a>
+           <div class="row">
+            <div class="col-lg-6">
+              <a href="index.html"><img src="img/logo.png" alt="Cempo"></a>
+            </div>
+            <div class="col-lg-6 colom">
+              <img src="img/colombia.png" alt="colombia">
+            </div>
+           </div>
           </div>  
         </header>
         <!-- NAV
@@ -48,14 +55,14 @@
                         <li><a href="empresa.html">Empresa</a></li>
                         <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Servicios<b class="caret"></b></a>
                             <ul class="dropdown-menu">
-                                <li><a href="gestion.html">Gestion de proyectos</a></li>
+                                <li><a href="gestion.html">Gestión de proyectos</a></li>
                                 <li><a href="gerencia.html">Gerencia estratégica</a></li>
-                                <li><a href="formacion.html">Formacion y capacitación</a></li>
+                                <li><a href="formacion.html">Formación y capacitación</a></li>
                                 <li><a href="planes.html">Planes de negocio</a></li>
                             </ul>
                         </li>
                         <li><a href="http://cempo-sas.blogspot.com/">Noticias</a></li>
-                        <li><a href="contactos.html">Contactos</a></li>
+                        <li><a href="contactenos.php">Contáctenos</a></li>
                     </ul>
                 </div>
                 </div>
@@ -67,7 +74,7 @@
         <div class="container">
         <div class="col-lg-12">
         <div class="row">
-          <h2 class="h3footer">Contactos</h2>
+          <h2 class="h3footer">Contáctenos</h2>
         </div>
         </div>
         </div>
@@ -77,6 +84,10 @@
             <div class="row padding">
                <div class="col-lg-7">
                  <p>Para comunicarnos escribanos un mensaje a través de este formulario, nosotros le daremos respuesta lo más pronto posible:</p>
+                 <?php
+                 if($_GET['ok']==1)
+                  echo "El mensaje ha sido enviado correctamente.";
+                 ?>
                  <form id="formcon" action="envia.php" method="post">
                      <div class="form-group">
                       <input type="text" name="name" class="form-control" value="Nombre" id="name" onblur="if (this.value == ''){this.value = 'Nombre'; }" onfocus="if (this.value == 'Nombre') {this.value = '';}" />
@@ -112,12 +123,14 @@
                   Colombia - Bogotá D.C. <br> 
                   Calle 100 No. 8a – 55 World Trade Center Torre C Piso 10. <br>
                   Celular: 310 455 8995<br>
-                  E-mail: Oscar.alzate@cempo.com.co <br><br>
+                  E-mail: info@cempo.com.co <br>
+                  cempo@cempo.com.co <br><br>
 
                   Pereira <br>
                   Carrera 8 No. 23 – 09 Oficina 606 Edificio Cámara de Comercio. <br>
                   Teléfono: (6) 325 5683 <br>
-                  E-mail: Oscar.alzate@cempo.com.co
+                  E-mail: info@cempo.com.co <br>
+                  cempo@cempo.com.com.co
                 </p>
                 </div>  
           </div>
@@ -143,13 +156,13 @@
                   <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
                     <li role="presentation"><a role="menuitem" tabindex="-1" href="gestion.html">Gestion de proyectos</a></li>
                     <li role="presentation"><a role="menuitem" tabindex="-1" href="gerencia.html">Gerencia estratégica</a></li>
-                    <li role="presentation"><a role="menuitem" tabindex="-1" href="formacion.html">Formacion y capacitación</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="formacion.html">Formación y capacitación</a></li>
                     <li role="presentation"><a role="menuitem" tabindex="-1" href="planes.html">Planes de negocio</a></li>
                   </ul>
                   </div>
                  </p>
                  <p class="pfooter"><a href="#">Noticias</a></p>
-                 <p class="pfooter"><a href="contactos.html">Contactos</a></p>
+                 <p class="pfooter"><a href="contactenos.php">Contáctenos</a></p>
               </div>
               <div class="col-lg-4">
                 <h3 class="h3footer">Redes sociales</h3>
