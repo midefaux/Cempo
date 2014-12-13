@@ -86,7 +86,7 @@
                  <p>Para comunicarnos escribanos un mensaje a través de este formulario, nosotros le daremos respuesta lo más pronto posible:</p>
                  <?php
                  if($_GET['ok']==1)
-                  echo "El mensaje ha sido enviado correctamente.";
+                  echo "<h2 class='h3footer'>El mensaje ha sido enviado correctamente.</h2>";
                  ?>
                  <form id="formcon" action="envia.php" method="post">
                      <div class="form-group">
