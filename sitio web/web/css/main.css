@@ -14,7 +14,7 @@ body {
     font-size: 1.6em;
     line-height: 1.4;
     font-family: 'Open Sans', sans-serif;
-    background-color:#ccc;
+    background-color:#FFF;
 }
 
 ::-moz-selection {
@@ -61,7 +61,9 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-
+header{
+    background-image: url(../img/header.jpg);
+}
 #myCarousel .carousel-caption {
     left:0;
     right:0;
@@ -119,13 +121,22 @@ textarea {
 .h3footer{
     color: #57a9b6;
 }
-footer{
-    background-color:#C4C4C4;
-}
 .colom{
-   float:right;
-   padding-top:3em;
-   padding-left: 16em;  
+   padding-top:5em;
+   color:#57a9b6;
+   font-size: 1.7;
+   font-weight: bold;
+  
+}
+.tel{
+    margin-top: 1em;
+}
+.aservicios {
+font-size: 1.2em;
+font-weight: bold;
+}
+.aservicios:hover{
+    text-decoration: none;
 }
 
 
@@ -163,6 +174,15 @@ footer{
 @media (max-width: 991px) { 
     .carousel-caption p,
     #myCarousel .list-group {display:none;} 
+}
+@media (max-width: 767px) {
+.colom{
+   padding-top:2em;
+   font-size: 1.7;
+   font-weight: bold;
+  
+}
+
 }
 
 
